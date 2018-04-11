@@ -59,7 +59,7 @@ jobs:
                 name: run composer install to get the vendor directory
                 command: composer install
                 
-             - run:
+            - run:
                 name: run composer update
                 command: composer update
 
