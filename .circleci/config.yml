@@ -56,12 +56,12 @@ jobs:
                 command: /build-tools-ci/scripts/set-environment
 
             - run:
-                name: run composer install to get the vendor directory
-                command: composer install
-                
-            - run:
                 name: run composer update
                 command: composer update
+
+            - run:
+                name: run composer install to get the vendor directory
+                command: composer install
 
             - save_cache:
                 key: composer-cache
